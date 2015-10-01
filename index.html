@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Circuit User Location</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://circuitsandbox.net/circuit.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+  </head>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=<API-Key>&signed_in=true&callback=initMap"></script> 
+  <body>
+  <div class="flexbox-container">
+    <div id="list">
+      <h3 id="title">Conversations</h3>
+      <select id="listbox" onchange="selectConv()"></select>
+    </div>
+    <div id="map"></div>
+  </div>
+  </body>
+</html>
